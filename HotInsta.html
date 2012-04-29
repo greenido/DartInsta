@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+
+<html>
+  <head>
+  	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  	
+  	<meta name="description" content="Show how to play with Dart as a simple web app that works with web.stagram 'API' :)">
+ 	<meta name="author" content="Ido Green | greenido.wordpress.com">
+ 	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" href="css/boot.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	<script src="js/libs/modernizr-2.5.3-respond-1.1.0.min.js"></script>
+	
+    <title>Instagram In Dart</title>
+  </head>
+  <body>
+  <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+
+	<div id="header-container" class="navbar navbar-fixed-top">
+		<header class="wrapper clearfix ">
+			<h1 id="title">Instagram In Dart</h1>
+			
+			<nav>
+				<ul>
+					<li><a href="#main">Photo Of The Day</a></li>
+					<li><a href="#searchDiv">Search</a></li>
+					<li><a href="http://greenido.wordpress.com" target="_blank">About</a></li>
+				</ul>
+			</nav>
+			
+		</header>
+	</div>
+	<div id="main-container">
+		<div id="main" class="wrapper clearfix">
+			
+			<div class="row">
+	  			<div class="span4">
+		  			<div id='myCarousel' class='carousel'>
+					<div id="carIn" class="carousel-inner">
+					<div class="item"><img src="http://distilleryimage8.instagram.com/05dc0334907311e1b10e123138105d6b_6.jpg">PHOTO OF THE DAY 27 apr 2012  @goldie77  special prize by  @55dslromafilm </div>
+					<div class="item"><img src="http://distilleryimage1.instagram.com/c03ea58a8fcc11e1a92a1231381b6f02_6.jpg">PHOTO OF THE DAY 26 apr 2012  @wagnus </div>
+					</div>
+				
+					<a class='carousel-control left' href='#myCarousel' data-slide='prev'>&lsaquo;</a> 
+					<a class='carousel-control right' href='#myCarousel' data-slide='next'>&rsaquo;</a>
+					</div>
+	  			</div>
+	  			
+	  			<div class="span8">
+		  			<div id="searchDiv">
+			  		
+			  			<!-- TODO: add a nice big spinner -->
+						<h3>Find More</h3>
+						<p>Enter the search term or hashtag</p>
+				    	<input type="text" id='search' name='search' value='beach'>
+				    		<button id='go'>Go</button>
+				    		<div id='result'>
+				  			<ul id='images'>
+				  			<!-- in case we wish to do something later with JQM -->
+				    		</ul>
+			  			</div>
+					
+			  		</div>
+	  			</div> <!-- span8 -->
+			</div> <!-- row -->
+  		</div>
+  	</div>
+  	
+  	<div id="footer-container">
+		<footer class="wrapper">
+			<h3>Dart Hackathon 2012 - TLV</h3>
+		</footer>
+	</div>
+  	
+  	<!-- get some JS to the fun -->
+   	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\/script>')</script>
+	
+	<script src="js/libs/carousel.js"></script>
+	<script src="js/script.js"></script>
+	<script>
+		var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+		(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+		g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+		s.parentNode.insertBefore(g,s)}(document,'script'));
+	</script>
+	 
+    <script type="application/dart" src="fetchInsta.dart"></script>
+    <script src="http://dart.googlecode.com/svn/branches/bleeding_edge/dart/client/dart.js"></script>
+  </body>
+</html>
+
