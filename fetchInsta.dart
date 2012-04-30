@@ -74,7 +74,7 @@ class HotInsta {
   void run() {
     _go.on.click.add(_(Event clickEvent) {
       if (_search.value != '') {
-        // make a Twitter request
+        // make a web request to our searching pipe
         XMLHttpRequest request = new XMLHttpRequest();
         String searchTerm = _search.value.replaceAll(' ','+');
         String baseurl = "http://pipes.yahoo.com/pipes/pipe.run?_id=8ef6eeff83d97b5a66503af00e891795&_render=json&term=" + searchTerm;
