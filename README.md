@@ -17,6 +17,7 @@ Other impressive projects from that hackathon:
 * Volfied like game, only much better Ð https://github.com/yanivoliver/DartVolfied
 * GraphMVC Ð A modular framework for graph (vertices/edges) data structures https://github.com/habeanf/dartgraph
 
+ todo - check how to use service workerS
  
 # Join the fun with DartInsta
 [![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/greenido/DartInsta?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
