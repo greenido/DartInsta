@@ -22,3 +22,7 @@ Other impressive projects from that hackathon:
 # Join the fun with DartInsta
 [![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/greenido/DartInsta?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
+
+[![Analytics](https://ga-beacon.appspot.com/UA-65622529-1/DartInsta/main)](https://github.com/igrigorik/ga-beacon)
+
+
